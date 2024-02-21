@@ -1,0 +1,106 @@
+.form {
+  background-color: aliceblue;
+
+  padding: 3rem 2rem;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 10rem;
+  row-gap: 4rem;
+
+  border-radius: 1rem;
+  box-shadow: 0px 3px 4px 7px rgba(0, 0, 0, 0.2);
+
+  margin-top: 5rem;
+}
+
+.form div {
+  position: relative;
+}
+
+.form div label {
+  position: absolute;
+  top: -10px;
+  left: 5px;
+
+  transition: 0.5s;
+  background-color: aliceblue;
+  padding: 0 1rem;
+  pointer-events: none;
+  color: #646cff;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.form div input {
+  margin: 0rem;
+  padding: 1.2rem 1rem;
+  padding-bottom: 0.8rem;
+  width: 400px;
+  font-size: 1.2rem;
+
+  outline: none;
+  border: none;
+  background: transparent;
+
+  border: 2px solid #1a1a1a;
+  transition: all 0.5s ease;
+  color: #1a1a1a;
+  font-weight: 400;
+}
+
+.form div input:focus {
+  border-color: #646cff;
+}
+
+.form button {
+  border: none;
+  outline: none;
+
+  background-color: #646cff;
+  color: aliceblue;
+  font-size: 1.3rem;
+  font-weight: 800;
+
+  border-radius: 1rem;
+  box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.1);
+
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.form button:hover {
+  background: #1a1a1a;
+}
+
+.modal {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 1rem;
+}
+
+.modal h1 {
+  text-align: center;
+}
+
+.close {
+  margin-top: 3rem;
+  padding: 0.5rem 2rem;
+  font-weight: 500;
+  border: none;
+  outline: none;
+  background-color: rgba(26, 26, 26, 0.8);
+  color: aliceblue;
+  font-size: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 2px 3px 1px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.close:hover {
+  background: transparent;
+  box-shadow: none;
+  color: #1a1a1a;
+}

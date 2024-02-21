@@ -1,0 +1,21 @@
+services:
+  db:
+    image: mongo:latest
+    container_name: db
+    ports:
+      - 27017:27017
+
+  progress-soft-task-backend:
+    build: ./progress-soft-task-java
+    container_name: progress-soft-task-backend
+    ports:
+      - 8080:8080
+    links:
+      - db
+
+  progress-soft-task-frontend:
+    build: ./progress-soft-task-react
+    container_name: progress-soft-task-frontend
+    ports:
+      - 3000:3000
+
