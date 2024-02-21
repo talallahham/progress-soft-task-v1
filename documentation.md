@@ -54,5 +54,5 @@ Follow these steps to run the project:
     ```
 
 Ensure that the `docker-compose.yml` file exists before running the commands.
-After bulding and running the project, `http://localhost:3000` to test the application via user interface.
+After bulding and running the project, open `http://localhost:3000` to test the application via user interface.
 
